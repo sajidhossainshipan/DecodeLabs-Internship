@@ -1,0 +1,44 @@
+# General Knowledge Quiz
+
+print("===== Welcome to the General Knowledge Quiz =====\n")
+
+score = 0
+
+# Question 1
+answer = input("1. What is the capital of France? ").strip().lower()
+
+if answer == "paris":
+    print("Correct!\n")
+    score += 1
+else:
+    print("Wrong! The correct answer is Paris.\n")
+
+# Question 2
+answer = input("2. Which planet is known as the Red Planet? ").strip().lower()
+
+if answer == "mars":
+    print("Correct!\n")
+    score += 1
+else:
+    print("Wrong! The correct answer is Mars.\n")
+
+# Question 3
+answer = input("3. How many days are there in a leap year? ").strip()
+
+if answer == "366":
+    print("Correct!\n")
+    score += 1
+else:
+    print("Wrong! The correct answer is 366.\n")
+
+print("===== Quiz Finished =====")
+print(f"Your Final Score: {score}/3")
+
+if score == 3:
+    print("Excellent! You got all answers correct.")
+elif score == 2:
+    print("Good job!")
+elif score == 1:
+    print("Keep practicing!")
+else:
+    print("Better luck next time!")
